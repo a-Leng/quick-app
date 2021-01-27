@@ -1,0 +1,15 @@
+<template>
+    <div class="home-component">
+        <text> nihao  </text>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {},
+}
+</script>
+
+<style lang="less">
+@import './index.less';
+</style>
