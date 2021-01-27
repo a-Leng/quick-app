@@ -28,9 +28,9 @@
     "logLevel": "log"
   },
   "router": {
-    "entry": "Demo",
+    "entry": "Index",
     "pages": {
-      "Demo": {
+      "Index": {
         "component": "index"
       },
       "DemoDetail": {
@@ -54,8 +54,8 @@
     "titleBarBackgroundColor": "#f2f2f2",
     "titleBarTextColor": "#414141",
     "pages": {
-      "Demo": {
-        "titleBarText": "示例页",
+      "Index": {
+        "titleBarText": "五元洗车",
         "menu": false
       },
       "DemoDetail": {
