@@ -36,8 +36,11 @@
       "Index": {
         "component": "index"
       },
-      "DemoDetail": {
+      "shopDetail": {
         "component": "index"
+      },
+      "MapDetail":{
+        "component":"index"
       },
       "About": {
         "component": "index"
@@ -61,11 +64,16 @@
         "titleBarText": "五元洗车",
         "menu": false
       },
-      "DemoDetail": {
-        "titleBarText": "详情页"
+      "shopDetail": {
+        "titleBarText": "店铺详情"
+      },
+      "MapDetail":{
+        "fullScreen":true,
+        "titleBar":false
       },
       "About": {
-        "menu": false
+        "menu": false,
+        "fullScreen":true
       }
     }
   }

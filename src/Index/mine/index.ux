@@ -1,0 +1,32 @@
+<template>
+<div class="mine-page">
+    <text>mine</text>
+    <input type="button" value="发送短信" @click="sendMessage"/>
+    <input type="button" value="跳转快应用" @click="toOther"/>
+</div>
+</template>
+
+<script>
+import router from '@system.router'
+export default {
+    private: {
+    },
+    sendMessage(){
+        router.push({
+            uri: 'sms:15307472156',
+            params: {
+                body: 'message'
+            }
+        })
+    },
+    toOther(){
+        router.push({
+            uri: 'hap://app/com.example.quickapp/page?key=value'
+        })
+    }
+}
+</script>
+
+<style lang="less">
+@import './index.less';
+</style>

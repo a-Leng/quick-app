@@ -1,0 +1,54 @@
+<template>
+    <div class="card-page" @click="toDetail">
+        <div class="card-img">
+            <image src="../../Common/img/car1.jpg" />
+        </div>
+        <div class="card-content">
+            <text class="title">{{cardInfo.shopTitle}}</text>
+            <div class="tags">
+                <text for="{{cardInfo.shopTags}}">{{$item}}</text>
+            </div>
+            <div class="locInfo">
+                <div class="loc-left">
+                    <image src="../../Common/icon/location.svg"/>
+                    <text class="addr">{{cardInfo.shopAddr}}</text>
+                </div>
+                <text class="away">{{cardInfo.shopAway}}KM</text>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import router from '@system.router'
+export default {
+    props:{
+        cardInfo:{
+            type:Object,
+            default:{
+                imgPth:'../../Common/img/car1.jpg'
+            }
+        }
+    },
+    data() {
+        return {
+            imgPth:this.cardInfo.count
+        }
+    },
+    onReady(){
+        console.log('imgPth', this.cardInfo)
+    },
+    toDetail(){
+        router.push({
+            uri:'shopDetail',
+            params:{
+                id:1
+            }
+        })
+    }
+}
+</script>
+
+<style lang="less">
+    @import './index.less';
+</style>

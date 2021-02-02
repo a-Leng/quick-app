@@ -1,0 +1,69 @@
+<template>
+    <div class="question-component">
+        <div class="online">
+            <div class="info">
+                <text class="title">在线客服</text>
+                <text class="tag">有问题，找客服</text>
+            </div>
+            <input type="button" value="立即咨询" />
+        </div>
+        <div class="question">
+            <text>常见问题</text>
+            <tabs class="tabs" onchange="changeQuesActive" index="{{questionTab}}">
+                <tab-bar class="tab-bar">
+                    <div class="{{questionTab==0?'quesActive':''}}">
+                        <text>订单问题</text>
+                    </div>
+                    <div class="{{questionTab==1?'quesActive':''}}">
+                        <text>卡券问题</text>
+                    </div>
+                    <div class="{{questionTab==2?'quesActive':''}}">
+                        <text>退款问题</text>
+                    </div>
+                    <div class="{{questionTab==3?'quesActive':''}}">
+                        <text>到店使用</text>
+                    </div>
+                </tab-bar>
+                <tab-content class="tab-content">
+                    <div>
+                        <div class="qaa">
+                            <div class="q">
+                                <image src="../../Common/icon/question1.svg" />
+                                <text>如何购买农行五元洗车产品？</text>
+                            </div>
+                            <div class="a">
+                                <image src="../../Common/icon/icon_answer.svg" />
+                                <text>使用五元洗车App。</text>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <text>卡券问题</text>
+                    </div>
+                    <div>
+                        <text>退款问题</text>
+                    </div>
+                    <div>
+                        <text>到店使用</text>
+                    </div>
+                </tab-content>
+            </tabs>
+        </div>
+    </div>
+</template>
+<script>
+    export default{
+        props:{},
+        data(){
+            return {
+                questionTab:null
+            }
+        },
+        changeQuesActive(e){
+            this.questionTab=e.index
+        }
+    }
+</script>
+<style lang="less">
+    @import './index.less';
+</style>

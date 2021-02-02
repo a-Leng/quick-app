@@ -1,4 +1,7 @@
 <import name="my-home" src="./home/index.ux"></import>
+<import name="my-question" src="./question/index.ux"></import>
+<import name="my-more" src="./more/index.ux"></import>
+<import name="my-mine" src="./mine/index.ux"></import>
 <template>
     <tabs class="index-page" onchange="changeTabactive" index="{{currentTab}}">
 		<tab-content class="tab-content">
@@ -6,13 +9,13 @@
 				<my-home></my-home>
 			</div>
 			<div class="question-tab">
-				<text>常见问题</text>
+				<my-question></my-question>
 			</div>
 			<div class="more-tab">
-				<text>更多服务</text>
+				<my-more></my-more>
 			</div>
 			<div class="mine-tab">
-				<text>我的</text>
+				<my-mine></my-mine>
 			</div>
 		</tab-content>
 		<tab-bar class="tab-bar">
@@ -58,5 +61,5 @@ export default {
 </script>
 
 <style lang="less">
-  @import './index.less';
+    @import './index.less';
 </style>

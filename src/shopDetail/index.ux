@@ -1,0 +1,90 @@
+<template>
+<div class="shopDetail-page">
+    <div class="shopInfo">
+        <image src="../Common/img/car2.jpg" />
+        <div class="shopInfo-title">
+            <text>车水马龙汽车服务店</text>
+            <div class="workTime">
+                <image src="../Common/icon/time.svg"/>
+                <text>营业时间 8:30-18:30</text>
+            </div>
+        </div>
+        <div class="shopLoc">
+            <div class="left">
+                <div class="left-img">
+                    <image class="loc" src="../Common/icon/location.svg"/>
+                </div>
+                <div class="left-info">
+                    <text class="addr">岳麓街道黄鹤村5片5栋3单元</text>
+                    <text class="away">距您5.00KM</text>
+                </div>
+            </div>
+            <div class="right">
+                <div class="nav-icon">
+                    <image src="../Common/icon/nav.svg"  @click="toMap"/>
+                </div>
+                <div>
+                    <image src="../Common/icon/phone.svg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <text class="listTitle">优惠活动</text>
+        <div class="shop-item">
+            <div class="item-left">
+                <div class="img-box">
+                    <image src="../Common/img/card.jpg"/>
+                </div>
+                <div class="shop-info">
+                    <text class="info-title">特惠洗车</text>
+                    <text>标准洗车·五座</text>
+                    <text>5元洗车</text>
+                </div>
+            </div>
+            <input type="button" value="预 定"/>
+        </div>
+        <div class="shop-item">
+            <div class="item-left">
+                <div class="img-box">
+                    <image src="../Common/img/card.jpg"/>
+                </div>
+                <div class="shop-info">
+                    <text class="info-title">特惠洗车</text>
+                    <text>标准洗车·五座</text>
+                    <text>5元洗车</text>
+                </div>
+            </div>
+            <input type="button" value="预 定"/>
+        </div>
+        <div class="shop-item">
+            <div class="item-left">
+                <div class="img-box">
+                    <image src="../Common/img/card.jpg"/>
+                </div>
+                <div class="shop-info">
+                    <text class="info-title">特惠洗车</text>
+                    <text>标准洗车·五座</text>
+                    <text>5元洗车</text>
+                </div>
+            </div>
+            <input type="button" value="预 定"/>
+        </div>
+    </div>
+</div>
+</template>
+
+<script>
+import router from '@system.router'
+export default {
+    toMap(){
+        router.push({
+            uri:'MapDetail'
+        })
+    }
+}
+</script>
+
+<style lang="less">
+@import './index.less';
+</style>

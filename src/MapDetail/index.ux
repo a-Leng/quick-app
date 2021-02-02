@@ -1,0 +1,26 @@
+<template>
+    <div class="mapDetail-page">
+        <map showmylocation="true"></map>
+        <div class="to" @click="toMapOthers">
+            <image src="../Common/icon/toRouter.svg"/>
+        </div>
+    </div>
+</template>
+
+<script>
+import router from '@system.router'
+export default {
+    private: {
+        
+    },
+    toMapOthers(){
+        router.push({
+            uri:'baidumap://map/direction'
+        })
+    }
+}
+</script>
+
+<style lang="less">
+@import './index.less';
+</style>

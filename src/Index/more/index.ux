@@ -1,0 +1,38 @@
+<template>
+    <div class="more-component">
+        <div>
+            <image src="../../Common/icon/app1.svg"/>
+            <text>驾照查分</text>
+        </div>
+        <div>
+            <image src="../../Common/icon/app2.svg"/>
+            <text>驾照查分</text>
+        </div>
+        <div>
+            <image src="../../Common/icon/app3.svg"/>
+            <text>驾照查分</text>
+        </div>
+        <div>
+            <image src="../../Common/icon/app4.svg"/>
+            <text>驾照查分</text>
+        </div>
+        <div>
+            <image src="../../Common/icon/app5.svg"/>
+            <text>驾照查分</text>
+        </div>
+        <div>
+            <image src="../../Common/icon/app6.svg"/>
+            <text>驾照查分</text>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    props:{}
+}
+</script>
+
+<style lang="less">
+    @import './index.less';
+</style>
